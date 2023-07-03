@@ -6,7 +6,7 @@ from strings.filters import command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
                             InlineKeyboardMarkup, Message)
-from YukkiMusic import app
+from AlexaMusic import app
 from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
