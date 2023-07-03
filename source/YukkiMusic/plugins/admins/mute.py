@@ -7,16 +7,16 @@
 #
 # All rights reserved.
 
-from YukkiMusic.plugins.play.filters import command
+from AlexaMusic.plugins.play.filters import command
 from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.core.call import Yukki
-from YukkiMusic.utils.database import is_muted, mute_on
-from YukkiMusic.utils.decorators import AdminRightsCheckCB
+from AlexaMusic import app
+from AlexaMusic.core.call import Alexa
+from AlexaMusic.utils.database import is_muted, mute_on
+from AlexaMusic.utils.decorators import AdminRightsCheckCB
 
 # Commands
 MUTE_COMMAND = get_command("MUTE_COMMAND")
@@ -34,7 +34,7 @@ async def mute_admin(cli, message: Message, _, chat_id):
     if await is_muted(chat_id):
         return await message.reply_text(_["admin_5"])
     await mute_on(chat_id)
-    await Yukki.mute_stream(chat_id)
+    await Alexa.mute_stream(chat_id)
     if message.sender_chat:
         mention = f'<a href=tg://user?id={message.chat.id}>{message.chat.title}</a>'
     else:
