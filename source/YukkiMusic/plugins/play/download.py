@@ -17,9 +17,9 @@ from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from youtubesearchpython import VideosSearch
 from yt_dlp import YoutubeDL
-from YukkiMusic import app as Client
+from AlexaMusic import app as Client
 
-from YukkiMusic.plugins.play.filters import command, other_filters
+from AlexaMusic.plugins.play.filters import command, other_filters
 
 def remove_if_exists(path):
     if os.path.exists(path):
