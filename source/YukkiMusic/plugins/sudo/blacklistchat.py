@@ -13,12 +13,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from YukkiMusic import app
+from AlexaMusic import app
 from config.config import OWNER_ID
-from YukkiMusic.utils.database import (blacklist_chat,
+from AlexaMusic.utils.database import (blacklist_chat,
                                        blacklisted_chats,
                                        whitelist_chat)
-from YukkiMusic.utils.decorators.language import language
+from AlexaMusic.utils.decorators.language import language
 
 # Commands
 
