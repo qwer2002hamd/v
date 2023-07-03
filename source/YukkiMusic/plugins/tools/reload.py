@@ -14,13 +14,13 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.core.call import Yukki
-from YukkiMusic.misc import db
-from YukkiMusic.utils.database import get_authuser_names, get_cmode
-from YukkiMusic.utils.decorators import (ActualAdminCB, AdminActual,
+from AlexaMusic import app
+from AlexaMusic.core.call import Alexa
+from AlexaMusic.misc import db
+from AlexaMusic.utils.database import get_authuser_names, get_cmode
+from AlexaMusic.utils.decorators import (ActualAdminCB, AdminActual,
                                          language)
-from YukkiMusic.utils.formatters import alpha_to_int
+from AlexaMusic.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
@@ -68,7 +68,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await Yukki.stop_stream(message.chat.id)
+        await Alexa.stop_stream(message.chat.id)
     except:
         pass
     chat_id = await get_cmode(message.chat.id)
@@ -79,7 +79,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Yukki.stop_stream(chat_id)
+            await Alexa.stop_stream(chat_id)
         except:
             pass
     return await mystic.edit_text(
