@@ -14,9 +14,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string
-from YukkiMusic import app
-from YukkiMusic.utils.database import get_lang, set_lang
-from YukkiMusic.utils.decorators import (ActualAdminCB, language,
+from AlexaMusic import app
+from AlexaMusic.utils.database import get_lang, set_lang
+from AlexaMusic.utils.decorators import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available
