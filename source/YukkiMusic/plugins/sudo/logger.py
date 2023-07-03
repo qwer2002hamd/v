@@ -12,10 +12,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from YukkiMusic import app
+from AlexaMusic import app
 from config.config import OWNER_ID
-from YukkiMusic.utils.database import add_off, add_on
-from YukkiMusic.utils.decorators.language import language
+from AlexaMusic.utils.database import add_off, add_on
+from AlexaMusic.utils.decorators.language import language
 
 # Commands
 LOGGER_COMMAND = get_command("LOGGER_COMMAND")
