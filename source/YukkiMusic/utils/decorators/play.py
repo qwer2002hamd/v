@@ -7,20 +7,20 @@
 #
 # All rights reserved.
 
-from YukkiMusic.plugins.play.filters import command
+from AlexaMusic.plugins.play.filters import command
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE, adminlist
 from strings import get_string
-from YukkiMusic import YouTube, app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import (get_cmode, get_lang,
+from AlexaMusic import YouTube, app
+from AlexaMusic.misc import SUDOERS
+from AlexaMusic.utils.database import (get_cmode, get_lang,
                                        get_playmode, get_playtype,
                                        is_active_chat,
                                        is_commanddelete_on,
                                        is_served_private_chat)
-from YukkiMusic.utils.database.memorydatabase import is_maintenance
-from YukkiMusic.utils.inline.playlist import botplaylist_markup
+from AlexaMusic.utils.database.memorydatabase import is_maintenance
+from AlexaMusic.utils.inline.playlist import botplaylist_markup
 
 
 def PlayWrapper(command):
@@ -74,20 +74,6 @@ def PlayWrapper(command):
                     caption=_["playlist_1"],
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
-        if message.sender_chat:
-            upl = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="How to Fix this? ",
-                            callback_data="AnonymousAdmin",
-                        ),
-                    ]
-                ]
-            )
-            return await message.reply_text(
-                _["general_4"], reply_markup=upl
-            )
         if message.command[0][0] == "c" or message.command[0][0] == "#":
             chat_id = await get_cmode(message.chat.id)
             if chat_id is None:
