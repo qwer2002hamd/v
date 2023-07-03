@@ -12,10 +12,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from YukkiMusic import app
+from AlexaMusic import app
 from config.config import OWNER_ID
-from YukkiMusic.utils.database import autoend_off, autoend_on
-from YukkiMusic.utils.decorators.language import language
+from AlexaMusic.utils.database import autoend_off, autoend_on
+from AlexaMusic.utils.decorators.language import language
 
 # Commands
 AUTOEND_COMMAND = get_command("AUTOEND_COMMAND")
