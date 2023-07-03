@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from YukkiMusic import app as Client
-from YukkiMusic import app
+from AlexaMusic import app as Client
+from AlexaMusic import app
 
 
 @Client.on_callback_query(filters.regex("arbic"))
