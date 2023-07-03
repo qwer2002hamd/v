@@ -1,14 +1,14 @@
 {
-    "name": "𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀",
-    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/1a38e52936d7007199c78.jpg",
+    "name": "˹ʜᴀᴍᴅ ✘ ᴍᴜsɪᴄ˼ 🫧🕊️⃝",
+    "description": "صل على النبي وتبسم🥺❤✨",
+    "logo": "https://telegra.ph/file/a0b4ae6f5304825e45f8e.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Yukki",
-    "YukkiMusicBot",
-    "telegram-bot",
+    "Alexa",
+    "alexamusic",
+    "alexamusicbot",
     "pyrogram"
     ],
     "stack": "container",
@@ -29,11 +29,6 @@
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "حط هنا توكن بوتك .",
-        "value": "",
-        "required": true
-      },
-      "GIT_TOKEN": {
         "description": "حط هنا توكن بوتك .",
         "value": "",
         "required": true
@@ -107,16 +102,6 @@
         "description": "Telegraph Image URL For Start Command",
         "value": "https://telegra.ph/file/1a38e52936d7007199c78.jpg",
         "required": true
-      },      
-      "UPSTREAM_REPO": {
-        "description": "سيبها زي مهيا .",
-        "value": "git clone https://github.com/o0ooo0oo/arab1",
-        "required": true
-      },
-      "UPSTREAM_BRANCH": {
-        "description": "Upstream Repo's Branch Name",
-        "value": "master",
-        "required": true
       }
     },
     "buildpacks": [
@@ -130,11 +115,5 @@
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
-      "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "free"
-          }
-      },
       "stack": "container"
   }
