@@ -10,10 +10,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from YukkiMusic import YouTube, app
-from YukkiMusic.utils.channelplay import get_channeplayCB
-from YukkiMusic.utils.decorators.language import languageCB
-from YukkiMusic.utils.stream.stream import stream
+from AlexaMusic import YouTube, app
+from AlexaMusic.utils.channelplay import get_channeplayCB
+from AlexaMusic.utils.decorators.language import languageCB
+from AlexaMusic import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
