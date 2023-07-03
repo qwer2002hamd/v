@@ -13,10 +13,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from YukkiMusic import app
+from AlexaMusic import app
 from config.config import OWNER_ID
-from YukkiMusic.utils.database import add_gban_user, remove_gban_user
-from YukkiMusic.utils.decorators.language import language
+from AlexaMusic.utils.database import add_gban_user, remove_gban_user
+from AlexaMusic.utils.decorators.language import language
 
 # Command
 BLOCK_COMMAND = get_command("BLOCK_COMMAND")
