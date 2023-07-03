@@ -16,8 +16,8 @@ from strings.filters import command
 from pyrogram import filters
 
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
+from AlexaMusic import app
+from AlexaMusic.misc import SUDOERS
 
 # Commands
 SPEEDTEST_COMMAND = get_command("SPEEDTEST_COMMAND")
