@@ -14,10 +14,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from YukkiMusic import app
+from AlexaMusic import app
 from config.config import OWNER_ID
-from YukkiMusic.utils.database.memorydatabase import get_video_limit
-from YukkiMusic.utils.formatters import convert_bytes
+from AlexaMusic.utils.database.memorydatabase import get_video_limit
+from AlexaMusic.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
