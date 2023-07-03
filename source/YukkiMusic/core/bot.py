@@ -16,11 +16,11 @@ import config
 from ..logging import LOGGER
 
 
-class YukkiBot(Client):
+class AlexaBot(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Starting Bot")
         super().__init__(
-            "YukkiMusicBot",
+            "MusicBot",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -33,7 +33,7 @@ class YukkiBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "🐰 |تم تشغيل البوت علي سورس ارنــوب"
+                config.LOG_GROUP_ID, "تم تشغيل البوت بنجاح"
             )
         except:
             LOGGER(__name__).error(
