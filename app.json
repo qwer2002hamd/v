@@ -14,72 +14,43 @@
     "stack": "container",
     "env": {
       "API_ID": {
-        "description": "حط هنا الايبي ايدي",
+        "description": "Get this value from https://my.telegram.org",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "حط هنا الايبي هاش",
+        "description": "Get this value from https://my.telegram.org",
         "value": "",
-        "required": true
-      },
-      "AUTO_LEAVING_ASSISTANT": {
-        "description": "If you want your assistant to leave all chats automatically after some time.",
-        "value": "True",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "حط هنا توكن بوتك .",
+        "description": "A Bot's token from Botfather",
         "value": "",
         "required": true
-      },  
-      "BOT_USERNAME": {
-        "description": "حط هنا يوزر البوت بدون @  .",
-        "value": "reshtybot",
-        "required": true
-      },
-      "MONGO_DB_URI": {
-        "description": "حط هنا كود المونجو .",
-        "value": "mongodb+srv://bot_vambir:Al2552001@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority",
-        "required": false
       },
       "MUSIC_BOT_NAME": {
-        "description": "حط اسم البوت انجلش كابيتال زيي - BARLOO.",
-        "value": "BARLOO",
+        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
+        "value": "˹ʜᴀᴍᴅ ✘ ᴍᴜsɪᴄ˼ 🫧🕊️⃝",
         "required": true
       },
-      "NAME_BOT": {
-        "description": "حط اسم البوت ب العربي زي ارنوب .",
-        "value": "ارنوب",
-        "required": true
-      },
-      "OWNER": {
-        "description": "حط هنا يوزر المطور منغير علامه @ .",
-        "value": "ww_2_2",
-        "required": true
-      },
-      "OWNER_USER": {
-        "description": "حط هنا يوزر المطور بعلامه @ .",
-        "value": "@ww_2_2",
-        "required": true
-      },
+        "START_PIC": {
+            "description": "ضع رابط صورة تلكراف يضهر لكليشة ستارت",
+            "value": "https://graph.org/file/8882cbd7cc786826d9ecb.jpg",
+            "required": true
+            
+        },
       "OWNER_ID": {
-        "description": "حط هنا ايدي المطور  .",
-        "value": "5934060011",
+        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "value": "1748768168",
         "required": true
-      },
-      "IMG_DEV1": {
-        "description": "حط لينك صورة المطور  .",
-        "value": "https://telegra.ph/file/73e6506f1496b59a022b2.jpg",
-        "required": true
-      },
-      "IMG_BOT1": {
-        "description": "حط لينك صورة البوت .",
-        "value": "https://telegra.ph/file/73e6506f1496b59a022b2.jpg",
+      },        
+      "MONGO_DB_URI": {
+        "description": "Mongo DB URL",
+        "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "حط كود الجلسه هنا .",
+        "description": "A Pyrogram Session Get It From  Here @Session_Generator_Robot.",
         "value": "",
         "required": true
       },
@@ -89,18 +60,13 @@
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "حط اول اسم كتبتوو فوق",
+        "description": "Your heroku app name",
         "value": "",
         "required": false
       },
       "LOG_GROUP_ID": {
-        "description": "حط ايدي جروب البوتات وارفع البوت والحساب المساعد مشرف الاول .",
-        "value": "-1001613226619",
-        "required": true
-      },
-      "START_IMG_URL": {
-        "description": "Telegraph Image URL For Start Command",
-        "value": "https://telegra.ph/file/1a38e52936d7007199c78.jpg",
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "value": "",
         "required": true
       }
     },
